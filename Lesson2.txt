@@ -1,0 +1,45 @@
+-- Инструменты веб-разработки
+
+-Sublime text sublimetext.
+-Eclipse eclipse.org (медленный, на джаве)
+-Netbeans netbeans.org (медленный, на джаве)
+-WebStorm jetbrains.com/webstorm
+-PHPStorm jetbrains.com/phpstorm
+-Atom atom.io
+-Brackets brackets.io
+
+!Book Dive into HTML5 by Mark Piligrim
+
+<!Doctype html>
+<html lang="en"> 
+<head>
+<meta charset="utf-8"> 
+//желательно все джава скрипты ставить перед закрывающим тегом body
+<link href="../../../css/style.css"> //подключение стиля. на сколько уровней выше. рекомендовано относительные пути использовать
+
+<header>,<nav>,<footer>,<content> - теги семантической верстки, по сути своей div, используется для более корректного считывания документа
+<a href="#">Link</a> - как заглушка
+
+Обновленные правила HTML5:
+<ins>, <del> показывают редактирования документа
+
+Для проверки кода можно использовать валидаторы (в т.ч. онлайн) - validator.w3.org
+в строчные элементы нельзя класть блочные
+
+<un><li> - стилизовать кружочки списка можно через джаваскрипт. Есть готовые наборы, подгружаемые.
+
+<form action=".."> - если не задать action, то отправится на ту же страницу, где размещена форма.
+через формы можно отправить вложение
+<form input type="file">
+Пример:
+<form action="/test.php" method="POST">
+<input type="text" name="name"></input>
+<input type="submit" value="Send"></input>
+</form>
+
+тег <b> устарел, заменять на <strong>
+
+Caniuse.com - проверяет, какие браузеры поддерживают 
+gs.statcounter.com - статистика использования браузеров в мире
+
+если нужно для старых браузеров используются полифилы
